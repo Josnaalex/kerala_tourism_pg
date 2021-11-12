@@ -34,7 +34,7 @@
       <div class="row">
           <div class="col-lg-4"></div>
       <div class="col-lg-4 myMargin">
-      <form class="row g-3">
+      <form class="row g-3" action="#" onsubmit="return validate()">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
@@ -44,13 +44,14 @@
           <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
         </div>
         <div class="col-md-4">
-          <label for="validationDefaultUsername" class="form-label">Username</label>
-          <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-          </div>
+          <label for="validationDefaultEmail" class="form-label">Email</label>
+          <!-- <div class="input-group"> -->
+            
+            <input type="text" class="form-control" id="validationDefaultEmail"  aria-describedby="inputGroupPrepend2">
+            <label for="error" id="error"></label>
+          <!-- </div> -->
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <label for="validationDefault03" class="form-label">City</label>
           <input type="text" class="form-control" id="validationDefault03" required>
         </div>
@@ -60,25 +61,32 @@
             <option selected disabled value="">Choose...</option>
             <option>...</option>
           </select>
-        </div>
+        </div> -->
         <div class="col-md-3">
           <label for="validationDefault05" class="form-label">Password</label>
-          <input type="text" class="password" id="validationDefault05" required>
+          <input type="password" class="form-control" id="validationDefault05" >
+          <label for="strength" id="strength"></label>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
+          <label for="validationphone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="validationphone" >
+          <label for="error1" id="error1"></label>
+        </div>
+        <!-- <div class="col-4">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
             <label class="form-check-label" for="invalidCheck2">
               Agree to terms and conditions
             </label>
           </div>
-        </div>
-        <div class="col-4">
+        </div> -->
+        <div class="row-g-3"> 
           <button class="btn btn-primary" type="submit">Sign Up</button>
-        </div>
+        </div> 
       </form>
     </div>
 </div>
 <div class="col-lg-3"></div>
+<script src="sign.js"></script>
     </body>
 </html>
